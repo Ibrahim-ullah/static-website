@@ -2,8 +2,8 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "Ibrahim Ullah",
-    image: "/profile.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "Research | IT Professional | Bibliophile | Interdisciplinary",
+    image: "/profile.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "Researcher | IT Professional",
     bio: "Stay Hungry, Stay foolish",
     email: "ibrahim.ullaah@gmail.com",
     linkedin: "iuemon",
