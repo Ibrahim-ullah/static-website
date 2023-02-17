@@ -50,6 +50,14 @@ const CONFIG = {
       siteVerification: process.env.GOOGLE_SITE_VERIFICATION || "",
     },
   },
+  utterances: {
+    enable: true,
+    config: {
+      repo: "morethanmin/morethan-log",
+      "issue-term": "og:title",
+      label: "💬 Utterances",
+    },
+  },
   cusdis: {
     enable: false,
     config: {
