@@ -30,7 +30,9 @@ const ServiceCard: React.FC = () => {
             target="_blank"
           >
             <AiFillCodeSandboxCircle className="icon" />
-            <div className="name">{CONFIG.projects[1].name}</div>
+            {project.name.map((name, nameIdx) => (
+              <div key={nameIdx} className="name">{name}</div>
+            ))}
           </a>
         ))}
       </StyledWrapper>
