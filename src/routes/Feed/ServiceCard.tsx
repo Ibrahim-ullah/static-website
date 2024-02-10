@@ -13,15 +13,15 @@ const ServiceCard: React.FC = () => {
         <Emoji></Emoji> Service
       </StyledTitle>
       <StyledWrapper>
-        {CONFIG.projects.map((project) => ( // Removed unnecessary index variable
+        {CONFIG.projects.map((project) => ( 
           <a
-            key={project.href} // Unique key should be based on project.href
+            key={project.href}
             href={project.href}
             rel="noreferrer"
             target="_blank"
           >
             <AiFillCodeSandboxCircle className="icon" />
-            <div className="name">{project.name}</div> // Access project name directly
+            <div className="name">{project.name}</div> 
           </a>
         ))}
       </StyledWrapper>
