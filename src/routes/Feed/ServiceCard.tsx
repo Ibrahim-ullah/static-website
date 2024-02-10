@@ -1,34 +1,35 @@
-import { CONFIG } from "site.config"
-import React from "react"
-import { AiFillCodeSandboxCircle } from "react-icons/ai"
-import styled from "@emotion/styled"
-import { Emoji } from "src/components/Emoji"
+import { CONFIG } from "site.config";
+import React from "react";
+import { AiFillCodeSandboxCircle } from "react-icons/ai";
+import styled from "@emotion/styled";
+import { Emoji } from "src/components/Emoji";
 
 const ServiceCard: React.FC = () => {
-  if (!CONFIG.projects) return null
+  if (!CONFIG.projects) return null;
+
   return (
     <>
       <StyledTitle>
-        <Emoji>🌟</Emoji> Service
+        <Emoji></Emoji> Service
       </StyledTitle>
       <StyledWrapper>
-        {CONFIG.projects.map((project, idx) => (
+        {CONFIG.projects.map((project) => ( // Removed unnecessary index variable
           <a
-            key={idx}
-            href={`${project.href}`}
+            key={project.href} // Unique key should be based on project.href
+            href={project.href}
             rel="noreferrer"
             target="_blank"
           >
             <AiFillCodeSandboxCircle className="icon" />
-                {project.name.map((name, nameIdx) => (
-              <div key={nameIdx} className="name">{name}</div>
-            ))}
+            <div className="name">{project.name}</div> // Access project name directly
           </a>
         ))}
       </StyledWrapper>
     </>
-  )
-}
+  );
+};
+
+
 
 export default ServiceCard
 
