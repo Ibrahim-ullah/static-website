@@ -21,6 +21,7 @@ const ServiceCard: React.FC = () => {
           >
             <AiFillCodeSandboxCircle className="icon" />
             <div className="name">{CONFIG.projects[0].name}</div>
+            <div className="name">{CONFIG.projects[1].name}</div>
           </a>
         ))}
       </StyledWrapper>
